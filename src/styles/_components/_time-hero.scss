@@ -1,13 +1,18 @@
 .contador {
     background-color:  rgba(255, 171, 0, 0.31);
     display: flex;
-    margin: 0 auto;
-    margin-top: 5px;
+    margin-left: auto;
+    margin-top: 40px;
     width: 500px;
     max-width: 500px;
     padding: 25px;
     border-radius: 19px;
     border: 2px solid #FFAB00;
+
+    &__contador-container {
+        display: flex;
+        justify-content: flex-end;
+    }
 
 
     &__content {

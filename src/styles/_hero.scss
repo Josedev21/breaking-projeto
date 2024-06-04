@@ -4,6 +4,11 @@
     background-size: cover;
     background-position: center;
 
+    &__header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
     &__eclipse {
         display: flex;
         width: 150px;
@@ -11,6 +16,7 @@
         
         img {
             width: 150px;
+            height: auto;
         }
 
     }
