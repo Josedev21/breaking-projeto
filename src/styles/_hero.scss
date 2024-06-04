@@ -1,0 +1,17 @@
+.hero {
+    height: 100vh;
+    background-image: url(../images/fundo--hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__eclipse {
+        display: flex;
+        width: 150px;
+        margin-left: auto;
+        
+        img {
+            width: 150px;
+        }
+
+    }
+}
