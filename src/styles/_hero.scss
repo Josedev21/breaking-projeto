@@ -16,8 +16,60 @@
         
         img {
             width: 150px;
-            height: auto;
+            height: 150px;
+        }
+    }
+
+    &__content {
+        margin-top: 100px;
+        max-width: 55%;
+
+        &__title {
+            margin-bottom: 10px;
+            color:  #FFAB00;
         }
 
+        p {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+
+            span {
+                color: #FFAB00;
+            }
+        }
+
+        &__links {
+            margin-top: 50px;
+            
+            button {
+                padding: 6px 15px;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: #FFAB00;
+                color: #000;
+                border: none;
+                cursor: pointer;
+                margin-right: 54px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: #fff;
+                font-weight: bold;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -5px;
+                    bottom: -5px;
+                    width: 165px;
+                    height: 3px;
+                    background-color: silver;
+                }
+            }
+        }
     }
 }
