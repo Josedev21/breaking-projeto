@@ -130,6 +130,7 @@
 
     @media (max-width:768px) {
         height: 105vh;
+
         
         &__eclipse {
             &__right {
@@ -146,11 +147,13 @@
         }
 
         &__content {
+            width: 100%;
             display: block;
             margin-left: 12px;
 
             &__links {
-                display: block;
+                width: 100%;
+                display: flex;
                 button {
                     font-size: 14px;
                 }
@@ -172,11 +175,13 @@
         }
 
         &__image {
-            height: 500px;
+            height: 200px;
             display: flex;
             align-items: center;
+            margin: 0 auto;
 
             img {
+                margin-top: 30px;
                 height: 200px;
             }
 
@@ -202,7 +207,7 @@
         }
     }
 
-    @media (max-width: 1024px) {
+    @media (min-width:769px) and (max-width:1024px) {
         height: 180vh;
         &__header {
             display: flex;
