@@ -9,8 +9,7 @@
     border: 2px solid #FFAB00;
     position: sticky;
     top: 40px;
-
-
+    z-index: 1;
 
     &__content {
         text-align: center;
@@ -37,11 +36,23 @@
     }
 
     @media (max-width:768px) {
-        width: 400;
+        width: 300;
         margin-left: 15px;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        &__content {
+            p {
+                &:last-child {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 
-    @media (min-width:769px) and (max-width:1024px) {   
-        margin-left: 22%;
+    @media (max-width:1024px) {
+        margin-top: 40px;
     }
+
 }
